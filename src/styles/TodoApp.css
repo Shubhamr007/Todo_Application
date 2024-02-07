@@ -1,0 +1,84 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .todo-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .tasks {
+    margin-bottom: 20px;
+  }
+  
+  .task {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+  }
+  
+  .task button {
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .task button:hover {
+    color: #333;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .task.completed {
+    border: 2px solid #00cc00; 
+  }
+
+
+  .create-task {
+    margin-top: 20px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .todo-container {
+      padding: 10px;
+    }
+    
+    .header {
+      font-size: 20px;
+    }
+  
+    .task button {
+      font-size: 14px;
+    }
+  }
+  
